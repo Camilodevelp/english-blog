@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camilo's English Learning Blog - Tree of Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .drop-zone {
+            transition: all 0.3s ease;
+        }
+        .drop-zone.hovered {
+            background-color: #e2e8f0;
+            border-color: #39A900;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans">
+
+    <!-- Header / Presentación con tu Caricatura Personalizada -->
+    <header class="bg-gradient-to-r from-slate-800 to-slate-900 py-12 px-4 shadow-xl border-b border-slate-700">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
+            <div class="w-48 h-48 rounded-2xl bg-emerald-500/20 border-4 border-emerald-500 flex items-center justify-center overflow-hidden shadow-2xl shrink-0">
+                <img src="Mifoto.jpeg" alt="Camilo Caricatura Anime" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <span class="bg-emerald-500/20 text-emerald-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">GA4-240202501-AA1-EV03 • SENA ADSO</span>
+                <h1 class="text-3xl md:text-4xl font-extrabold mt-2 text-white">Camilo's English Learning Blog</h1>
+                <p class="text-slate-300 mt-2 text-sm leading-relaxed">
+                    "Hello! My name is Camilo Eduardo Arias Acevedo. Welcome to my Tree of Life. Here, my roots, trunk, branches, and leaves tell my story, values, and professional journey."
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-10 space-y-16">
+
+        <!-- SECCIÓN 1: TREE OF LIFE VISUAL SUMMARY -->
+        <section class="bg-slate-800/80 backdrop-blur rounded-2xl p-6 md:p-8 border border-slate-700 shadow-xl">
+            <h2 class="text-2xl font-bold text-emerald-400 mb-6 flex items-center gap-2">
+                <i class="fa-solid fa-tree"></i> My Tree of Life Overview
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700">
+                    <h3 class="font-bold text-amber-400 mb-1"><i class="fa-solid fa-seedling mr-2"></i>Roots (Origins & Values)</h3>
+                    <p class="text-sm text-slate-300">Born and raised in Bogotá. My family instilled essential values like honesty, hard work, and social contribution.</p>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700">
+                    <h3 class="font-bold text-emerald-400 mb-1"><i class="fa-solid fa-chess-rook mr-2"></i>Trunk (Who I Am Today)</h3>
+                    <p class="text-sm text-slate-300">Hardworking person, bilingual logistics coordinator, and software developer enthusiast studying at SENA.</p>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700">
+                    <h3 class="font-bold text-sky-400 mb-1"><i class="fa-solid fa-code-branch mr-2"></i>Branches (Future Goals)</h3>
+                    <p class="text-sm text-slate-300">Becoming a software developer in a multinational tech company and serving God while helping others grow.</p>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700">
+                    <h3 class="font-bold text-purple-400 mb-1"><i class="fa-solid fa-apple-whole mr-2"></i>Fruits (Achievements)</h3>
+                    <p class="text-sm text-slate-300">Finishing school, mastering technical skills, building automation tools, and looking forward with absolute optimism.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: JUEGOS DE GRAMÁTICA (DRAG AND DROP) -->
+        <section class="space-y-12">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-white">Grammar Interactive Practice</h2>
+                <p class="text-slate-400 text-sm mt-1">Drag the correct option into each empty space!</p>
+            </div>
+
+            <!-- JUEGO 1: SIMPLE PRESENT -->
+            <div class="bg-slate-800 rounded-2xl p-6 md:p-8 border border-slate-700 shadow-xl space-y-8" data-game="present">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-emerald-400">1. Simple Present (Presente Simple)</h3>
+                    <span class="text-xs bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full font-semibold">Evidence: ADSO Brochure</span>
+                </div>
+                
+                <!-- Frase 1 -->
+                <div class="bg-slate-900 p-5 rounded-xl border border-slate-700 space-y-4">
+                    <div class="text-slate-200 text-base flex flex-wrap items-center gap-2">
+                        <span>I</span>
+                        <span class="drop-zone inline-block w-32 h-10 border-2 border-dashed border-slate-500 rounded-lg bg-slate-800 text-center leading-9 text-emerald-400 font-bold" data-answer="work" ondragover="allowDrop(event)" ondragleave="removeHover(event)" ondrop="drop(event)">_____</span>
+                        <span>as a bilingual logistics coordinator.</span>
+                    </div>
+                    <div class="flex flex-wrap gap-3 pt-2 border-t border-slate-800">
+                        <div draggable="true" ondragstart="drag(event)" id="opt-1-a" class="px-4 py-1.5 bg-emerald-600/80 hover:bg-emerald-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">a) work</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-1-b" class="px-4 py-1.5 bg-emerald-600/80 hover:bg-emerald-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">b) am working</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-1-c" class="px-4 py-1.5 bg-emerald-600/80 hover:bg-emerald-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">c) worked</div>
+                    </div>
+                </div>
+
+                <!-- Frase 2 (Corregida con support, supports, supported) -->
+                <div class="bg-slate-900 p-5 rounded-xl border border-slate-700 space-y-4">
+                    <div class="text-slate-200 text-base flex flex-wrap items-center gap-2">
+                        <span>The program</span>
+                        <span class="drop-zone inline-block w-32 h-10 border-2 border-dashed border-slate-500 rounded-lg bg-slate-800 text-center leading-9 text-emerald-400 font-bold" data-answer="supports" ondragover="allowDrop(event)" ondragleave="removeHover(event)" ondrop="drop(event)">_____</span>
+                        <span>you to design digital solutions.</span>
+                    </div>
+                    <div class="flex flex-wrap gap-3 pt-2 border-t border-slate-800">
+                        <div draggable="true" ondragstart="drag(event)" id="opt-2-a" class="px-4 py-1.5 bg-emerald-600/80 hover:bg-emerald-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">a) support</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-2-b" class="px-4 py-1.5 bg-emerald-600/80 hover:bg-emerald-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">b) supports</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-2-c" class="px-4 py-1.5 bg-emerald-600/80 hover:bg-emerald-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">c) supported</div>
+                    </div>
+                </div>
+
+                <!-- Frase 3 -->
+                <div class="bg-slate-900 p-5 rounded-xl border border-slate-700 space-y-4">
+                    <div class="text-slate-200 text-base flex flex-wrap items-center gap-2">
+                        <span>My mother</span>
+                        <span class="drop-zone inline-block w-32 h-10 border-2 border-dashed border-slate-500 rounded-lg bg-slate-800 text-center leading-9 text-emerald-400 font-bold" data-answer="prepares" ondragover="allowDrop(event)" ondragleave="removeHover(event)" ondrop="drop(event)">_____</span>
+                        <span>me on my journey.</span>
+                    </div>
+                    <div class="flex flex-wrap gap-3 pt-2 border-t border-slate-800">
+                        <div draggable="true" ondragstart="drag(event)" id="opt-3-a" class="px-4 py-1.5 bg-emerald-600/80 hover:bg-emerald-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">a) prepared</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-3-b" class="px-4 py-1.5 bg-emerald-600/80 hover:bg-emerald-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">b) prepares</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-3-c" class="px-4 py-1.5 bg-emerald-600/80 hover:bg-emerald-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">c) prepare</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JUEGO 2: SIMPLE PAST -->
+            <div class="bg-slate-800 rounded-2xl p-6 md:p-8 border border-slate-700 shadow-xl space-y-8" data-game="past">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-sky-400">2. Simple Past (Pasado Simple)</h3>
+                    <span class="text-xs bg-sky-500/20 text-sky-300 px-3 py-1 rounded-full font-semibold">Evidence: Audio Script</span>
+                </div>
+                <p class="text-sm text-slate-300">Used to talk about completed actions in the past.</p>
+                
+                <!-- Frase 1 -->
+                <div class="bg-slate-900 p-5 rounded-xl border border-slate-700 space-y-4">
+                    <div class="text-slate-200 text-base flex flex-wrap items-center gap-2">
+                        <span>I</span>
+                        <span class="drop-zone inline-block w-32 h-10 border-2 border-dashed border-slate-500 rounded-lg bg-slate-800 text-center leading-9 text-sky-400 font-bold" data-answer="worked" ondragover="allowDrop(event)" ondragleave="removeHover(event)" ondrop="drop(event)">_____</span>
+                        <span>at Concentrix for three years.</span>
+                    </div>
+                    <div class="flex flex-wrap gap-3 pt-2 border-t border-slate-800">
+                        <div draggable="true" ondragstart="drag(event)" id="opt-past-1-a" class="px-4 py-1.5 bg-sky-600/80 hover:bg-sky-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">a) worked</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-past-1-b" class="px-4 py-1.5 bg-sky-600/80 hover:bg-sky-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">b) work</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-past-1-c" class="px-4 py-1.5 bg-sky-600/80 hover:bg-sky-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">c) am working</div>
+                    </div>
+                </div>
+
+                <!-- Frase 2 -->
+                <div class="bg-slate-900 p-5 rounded-xl border border-slate-700 space-y-4">
+                    <div class="text-slate-200 text-base flex flex-wrap items-center gap-2">
+                        <span>I</span>
+                        <span class="drop-zone inline-block w-32 h-10 border-2 border-dashed border-slate-500 rounded-lg bg-slate-800 text-center leading-9 text-sky-400 font-bold" data-answer="was" ondragover="allowDrop(event)" ondragleave="removeHover(event)" ondrop="drop(event)">_____</span>
+                        <span>born and raised in Bogotá.</span>
+                    </div>
+                    <div class="flex flex-wrap gap-3 pt-2 border-t border-slate-800">
+                        <div draggable="true" ondragstart="drag(event)" id="opt-past-2-a" class="px-4 py-1.5 bg-sky-600/80 hover:bg-sky-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">a) were</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-past-2-b" class="px-4 py-1.5 bg-sky-600/80 hover:bg-sky-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">b) am</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-past-2-c" class="px-4 py-1.5 bg-sky-600/80 hover:bg-sky-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">c) was</div>
+                    </div>
+                </div>
+
+                <!-- Frase 3 -->
+                <div class="bg-slate-900 p-5 rounded-xl border border-slate-700 space-y-4">
+                    <div class="text-slate-200 text-base flex flex-wrap items-center gap-2">
+                        <span>My grandparents</span>
+                        <span class="drop-zone inline-block w-32 h-10 border-2 border-dashed border-slate-500 rounded-lg bg-slate-800 text-center leading-9 text-sky-400 font-bold" data-answer="were" ondragover="allowDrop(event)" ondragleave="removeHover(event)" ondrop="drop(event)">_____</span>
+                        <span>from Boyacá.</span>
+                    </div>
+                    <div class="flex flex-wrap gap-3 pt-2 border-t border-slate-800">
+                        <div draggable="true" ondragstart="drag(event)" id="opt-past-3-a" class="px-4 py-1.5 bg-sky-600/80 hover:bg-sky-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">a) is</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-past-3-b" class="px-4 py-1.5 bg-sky-600/80 hover:bg-sky-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">b) are</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-past-3-c" class="px-4 py-1.5 bg-sky-600/80 hover:bg-sky-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">c) were</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JUEGO 3: PRESENT PERFECT -->
+            <div class="bg-slate-800 rounded-2xl p-6 md:p-8 border border-slate-700 shadow-xl space-y-8" data-game="perfect">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-purple-400">3. Present Perfect (Presente Perfecto)</h3>
+                    <span class="text-xs bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full font-semibold">Evidence: Cover Letter</span>
+                </div>
+                <p class="text-sm text-slate-300">Used for actions that started in the past and continue or have relevance now.</p>
+                
+                <!-- Frase 1 -->
+                <div class="bg-slate-900 p-5 rounded-xl border border-slate-700 space-y-4">
+                    <div class="text-slate-200 text-base flex flex-wrap items-center gap-2">
+                        <span>I</span>
+                        <span class="drop-zone inline-block w-32 h-10 border-2 border-dashed border-slate-500 rounded-lg bg-slate-800 text-center leading-9 text-purple-400 font-bold" data-answer="have" ondragover="allowDrop(event)" ondragleave="removeHover(event)" ondrop="drop(event)">_____</span>
+                        <span>developed different projects.</span>
+                    </div>
+                    <div class="flex flex-wrap gap-3 pt-2 border-t border-slate-800">
+                        <div draggable="true" ondragstart="drag(event)" id="opt-perf-1-a" class="px-4 py-1.5 bg-purple-600/80 hover:bg-purple-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">a) has</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-perf-1-b" class="px-4 py-1.5 bg-purple-600/80 hover:bg-purple-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">b) had</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-perf-1-c" class="px-4 py-1.5 bg-purple-600/80 hover:bg-purple-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">c) have</div>
+                    </div>
+                </div>
+
+                <!-- Frase 2 -->
+                <div class="bg-slate-900 p-5 rounded-xl border border-slate-700 space-y-4">
+                    <div class="text-slate-200 text-base flex flex-wrap items-center gap-2">
+                        <span>My skills</span>
+                        <span class="drop-zone inline-block w-36 h-10 border-2 border-dashed border-slate-500 rounded-lg bg-slate-800 text-center leading-9 text-purple-400 font-bold" data-answer="have improved" ondragover="allowDrop(event)" ondragleave="removeHover(event)" ondrop="drop(event)">_____</span>
+                        <span>over time.</span>
+                    </div>
+                    <div class="flex flex-wrap gap-3 pt-2 border-t border-slate-800">
+                        <div draggable="true" ondragstart="drag(event)" id="opt-perf-2-a" class="px-4 py-1.5 bg-purple-600/80 hover:bg-purple-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">a) have improved</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-perf-2-b" class="px-4 py-1.5 bg-purple-600/80 hover:bg-purple-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">b) has improved</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-perf-2-c" class="px-4 py-1.5 bg-purple-600/80 hover:bg-purple-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">c) had improved</div>
+                    </div>
+                </div>
+
+                <!-- Frase 3 -->
+                <div class="bg-slate-900 p-5 rounded-xl border border-slate-700 space-y-4">
+                    <div class="text-slate-200 text-base flex flex-wrap items-center gap-2">
+                        <span>I</span>
+                        <span class="drop-zone inline-block w-36 h-10 border-2 border-dashed border-slate-500 rounded-lg bg-slate-800 text-center leading-9 text-purple-400 font-bold" data-answer="have learned" ondragover="allowDrop(event)" ondragleave="removeHover(event)" ondrop="drop(event)">_____</span>
+                        <span>new programming tools.</span>
+                    </div>
+                    <div class="flex flex-wrap gap-3 pt-2 border-t border-slate-800">
+                        <div draggable="true" ondragstart="drag(event)" id="opt-perf-3-a" class="px-4 py-1.5 bg-purple-600/80 hover:bg-purple-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">a) has learned</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-perf-3-b" class="px-4 py-1.5 bg-purple-600/80 hover:bg-purple-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">b) had learned</div>
+                        <div draggable="true" ondragstart="drag(event)" id="opt-perf-3-c" class="px-4 py-1.5 bg-purple-600/80 hover:bg-purple-600 text-white text-sm font-bold rounded-lg cursor-pointer shadow transition">c) have learned</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="text-center py-8 text-slate-500 text-xs border-t border-slate-800 mt-20">
+        <p>© 2026 Camilo Eduardo Arias Acevedo • SENA ADSO Program (Record 3607744)</p>
+    </footer>
+
+    <!-- JavaScript para la lógica de Arrastrar y Soltar (Drag and Drop) -->
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+            ev.currentTarget.classList.add('hovered');
+        }
+
+        function removeHover(ev) {
+            ev.currentTarget.classList.remove('hovered');
+        }
+
+        function drag(ev) {
+            let rawText = ev.target.innerText;
+            let cleanText = rawText.includes(')') ? rawText.split(')')[1].trim() : rawText.trim();
+            
+            ev.dataTransfer.setData("text", ev.target.id);
+            ev.dataTransfer.setData("text-value", cleanText);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            ev.currentTarget.classList.remove('hovered');
+            
+            const dataId = ev.dataTransfer.getData("text");
+            const dataValue = ev.dataTransfer.getData("text-value");
+            const expectedAnswer = ev.currentTarget.getAttribute("data-answer");
+
+            const draggedElement = document.getElementById(dataId);
+
+            if (dataValue.toLowerCase() === expectedAnswer.toLowerCase()) {
+                ev.currentTarget.innerText = dataValue;
+                ev.currentTarget.classList.remove('border-dashed', 'border-slate-500', 'bg-slate-800');
+                ev.currentTarget.classList.add('bg-emerald-600/30', 'border-emerald-500', 'text-emerald-300');
+                draggedElement.style.opacity = '0.3';
+                draggedElement.setAttribute('draggable', 'false');
+            } else {
+                ev.currentTarget.classList.add('border-rose-500', 'bg-rose-500/20');
+                setTimeout(() => {
+                    ev.currentTarget.classList.remove('border-rose-500', 'bg-rose-500/20');
+                }, 500);
+            }
+        }
+    </script>
+</body>
+</html>
